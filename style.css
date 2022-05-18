@@ -1,0 +1,111 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: rgb(48, 48, 48);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* navbar */
+.navbar {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(102, 30, 196);
+}
+.navbar__logo {
+  font-size: 32px;
+  color: white;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+}
+.navbar__list__item {
+  list-style: none;
+  padding: 20px 15px;
+  color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.navbar__list__item:hover {
+  background: rgba(0, 0, 0, 0.233);
+  color: white;
+}
+/* main */
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 20px 30px;
+}
+.title {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 15px;
+}
+.discriptrion {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+/* gallery */
+.gallery {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery__item {
+  display: block;
+  width: 300px;
+  height: 250px;
+  background: #44444462;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gallery__item:hover,
+.gallery__item:active {
+  background: #77777749;
+}
+.gallery__item--invisible {
+  visibility: hidden;
+}
+.gallery__item__photo {
+  height: auto;
+  max-width: 100%;
+}
+.gallery__item__info {
+  display: flex;
+  padding: 10px;
+}
+.info__avatar {
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.info__text {
+  padding-left: 15px;
+}
+.info__text__title {
+  font-size: 16px;
+  color: whitesmoke;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.info__text__author {
+  font-size: 14px;
+  color: rgb(158, 163, 163);
+  padding-top: 8px;
+}
